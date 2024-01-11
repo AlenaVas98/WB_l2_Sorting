@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Визуализация сортировки</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+  </head>
+
+  <body>
+    <h1>Визуализация алгоритмов сортировки</h1>
+    <div class="root">
+      <div>
+        <div>
+          <h3>Выберите вид сортировки</h3>
+          <div class="sort-buttons">
+            <button id="shell">Сортировка Шелла</button>
+            <button id="comb">Сортировка Расческой</button>
+            <button id="cycle">Сортировка Циклическая</button>
+            <button id="sample">Сортировка Выборка</button>
+            <button id="bubble">Пузырьковая Сортировка</button>
+          </div>
+        </div>
+        <div class="input-box">
+          <div id="numBarsBox">
+            <h3>Выберите количество столбцов</h3>
+            <input type="number" id="numBars" />
+          </div>
+          <div id="speedBox">
+            <h3>Выберите скорость сортировки</h3>
+            <input type="number" id="speed" />
+          </div>
+          <button type="submit" id="init">Создать</button>
+        </div>
+        <div id="playBox">
+          <button id="play">Запустить</button>
+        </div>
+      </div>
+      <div id="container"></div>
+    </div>
+    <script defer type="module" src="./src/js/index.js"></script>
+  </body>
+</html>
